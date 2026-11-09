@@ -121,7 +121,7 @@ export function AboutSection() {
     <section id="sobre" className="bg-surface py-20 lg:py-28">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 md:grid-cols-2 lg:px-8">
         <Reveal className="order-2 md:order-1">
-          <img src={a.image} alt={a.imageAlt} loading="lazy" width={1024} height={1024} className="aspect-[4/3] w-full rounded-[1.75rem] object-cover object-top shadow-lift" />
+          <img src={a.image} alt={a.imageAlt} loading="lazy" width={1024} height={1024} className="aspect-square w-full max-w-lg mx-auto rounded-[1.75rem] object-cover shadow-lift" />
         </Reveal>
         <Reveal className="order-1 md:order-2">
           <SectionHeading eyebrow="Porquê nós" title={a.title} center={false} />

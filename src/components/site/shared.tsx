@@ -1,3 +1,4 @@
+import emblem from "@/assets/logo-emblem.png";
 import { useEffect, useRef, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
@@ -46,9 +47,8 @@ export function SectionHeading({ eyebrow, title, subtitle, center = true }: { ey
 export function Logo({ light = false }: { light?: boolean }) {
   return (
     <span className={cn("flex items-center gap-2 font-display text-lg font-extrabold", light ? "text-primary-foreground" : "text-primary")}>
-      <span className="grid h-9 w-9 place-items-center rounded-xl bg-accent text-accent-foreground" aria-hidden>
-        <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor"><path d="M12 2l1.8 5.6L19.5 9l-5.7 1.5L12 16l-1.8-5.5L4.5 9l5.7-1.4z" /><path d="M18.5 14l.9 2.4 2.4.9-2.4.9-.9 2.3-.9-2.3-2.3-.9 2.3-.9z" opacity=".7" /></svg>
-      </span>
+      {/* Client's own emblem from her flyer (transparent background, made for dark surfaces). */}
+      <img src={emblem} alt="" aria-hidden width={547} height={273} className="h-11 w-auto" />
       <span>SF <span className="text-accent">Clean</span> Service</span>
     </span>
   );

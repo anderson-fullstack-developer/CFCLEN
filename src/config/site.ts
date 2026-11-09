@@ -8,6 +8,7 @@
  */
 import hero from "@/assets/hero.jpg";
 import cleaner from "@/assets/g-cleaner.jpg";
+import flyer from "@/assets/flyer.jpg";
 import kitchen from "@/assets/g-kitchen.jpg";
 import office from "@/assets/g-office.jpg";
 import bathroom from "@/assets/g-bathroom.jpg";
@@ -85,8 +86,8 @@ export const site = {
     title: "Porquê escolher a SF Clean Service?",
     text: "Sabemos que o seu tempo é valioso. Por isso tratamos da limpeza com cuidado e rigor e falamos consigo de forma simples e direta, para saber sempre com o que pode contar.",
     notice: "Demonstração: textos e imagens a confirmar com a SF Clean Service.",
-    image: cleaner,
-    imageAlt: "Profissional de limpeza a limpar o chão (imagem ilustrativa)",
+    image: flyer,
+    imageAlt: "Panfleto da SF Clean Service: limpeza profissional em Lisboa, orçamento grátis, ligue 914 068 213",
     points: ["Atenção aos detalhes em cada divisão", "Comunicação simples e direta, pelo WhatsApp", "Orçamentos gratuitos e sem compromisso"],
   },
 
@@ -131,6 +132,25 @@ export const site = {
       { q: "Como posso pedir um orçamento?", a: "Carregue em qualquer botão do WhatsApp ou preencha o formulário e envie-nos o pedido. Respondemos para combinar os detalhes." },
       { q: "O preço depende do espaço?", a: "Sim. O valor depende da dimensão do espaço, do tipo de limpeza e da frequência. Por isso fazemos sempre um orçamento à medida." },
     ],
+  },
+
+  /** Assistente flutuante: só botões, leva ao WhatsApp ou ao telefone. */
+  chat: {
+    launcher: "Precisa de ajuda?",
+    launcherShort: "Ajuda",
+    title: "Como podemos ajudar?",
+    subtitle: "SF Clean Service",
+    greeting: "Olá! 👋 Somos a SF Clean Service. Em que podemos ajudar? Carregue numa das opções abaixo.",
+    askService: "Com todo o gosto! De que serviço de limpeza precisa?",
+    quoteReady: "Ótimo! Carregue no botão abaixo. Abre-se o WhatsApp com o pedido já escrito. Só tem de carregar em Enviar.",
+    services: "Fazemos limpeza de casas, espaços comerciais, escritórios, escadas e limpeza pós-obra.",
+    zones: "Trabalhamos em Casal de Cambra e arredores, na região de Lisboa. Se estiver noutra localidade, fale connosco e dizemos-lhe se conseguimos ir até si.",
+    prices: "O valor depende do espaço, do tipo de limpeza e da frequência. O orçamento é gratuito e sem compromisso: peça-nos o seu.",
+    regular: "Sim. Pode pedir uma limpeza pontual ou regular, por exemplo todas as semanas. Combinamos consigo o que for melhor.",
+    typingLabel: "SF Clean Service está a escrever…",
+    whatsappIntro: "Carregue no botão abaixo para falar connosco no WhatsApp.",
+    callIntro: "Pode ligar-nos diretamente. Carregue no botão abaixo para ligar.",
+    whatsappGeneric: "Olá! Gostaria de pedir um orçamento gratuito para um serviço de limpeza.",
   },
 
   finalCta: {

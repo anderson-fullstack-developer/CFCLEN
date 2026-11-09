@@ -4,6 +4,7 @@ import { AboutSection, ZoneSection, FAQAccordion, FinalCTA, HeroSection, HowItWo
 import { Gallery } from "@/components/site/Gallery";
 import { QuoteForm } from "@/components/site/QuoteForm";
 import { Footer, MobileStickyCTA } from "@/components/site/Footer";
+import { ChatBot } from "@/components/site/ChatBot";
 
 import { site } from "@/config/site";
 
@@ -78,6 +79,7 @@ function Index() {
       </main>
       <Footer />
       <MobileStickyCTA />
+      <ChatBot />
     </>
   );
 }

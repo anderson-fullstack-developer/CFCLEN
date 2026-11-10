@@ -31,12 +31,12 @@ export function buildQuoteMessage(d: QuoteData): string {
   const lines = [
     "Olá! Gostaria de pedir um orçamento.",
     "",
-    `🧹 Serviço: ${d.service}`,
-    `📍 Localidade: ${d.location.trim()}`,
-    `🏠 Espaço: ${d.space}`,
+    `- Serviço: ${d.service}`,
+    `- Localidade: ${d.location.trim()}`,
+    `- Espaço: ${d.space}`,
   ];
-  if (d.date) lines.push(`📅 Data pretendida: ${formatDatePT(d.date)}`);
-  if (d.notes.trim()) lines.push(`📝 Observações: ${d.notes.trim()}`);
+  if (d.date) lines.push(`- Data pretendida: ${formatDatePT(d.date)}`);
+  if (d.notes.trim()) lines.push(`- Observações: ${d.notes.trim()}`);
   lines.push("", "Podem enviar-me uma proposta?");
   return lines.join("\n");
 }

@@ -14,7 +14,7 @@ describe("quote", () => {
   });
   it("builds the message with pt date", () => {
     const m = buildQuoteMessage(base);
-    expect(m).toContain("📅 Data pretendida: 12/11/2026");
-    expect(m).toContain("📍 Localidade: Lisboa");
+    expect(m).toContain("- Data pretendida: 12/11/2026");
+    expect(m).toContain("- Localidade: Lisboa");
   });
 });

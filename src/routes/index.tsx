@@ -1,4 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { DemoLocked } from "@/components/DemoLocked";
+
+// Demonstração desativada até o cliente ativar o website. Mudar para false para voltar a mostrar o site.
+const DEMO_LOCKED = true;
 import { Header } from "@/components/site/Header";
 import { AboutSection, ZoneSection, FAQAccordion, FinalCTA, HeroSection, HowItWorksSection, ServicesSection } from "@/components/site/Sections";
 import { Gallery } from "@/components/site/Gallery";
@@ -58,7 +62,7 @@ export const Route = createFileRoute("/")({
     links: [{ rel: "canonical", href: SITE_URL }],
     scripts: [{ type: "application/ld+json", children: JSON.stringify(localBusiness) }],
   }),
-  component: Index,
+  component: DEMO_LOCKED ? LockedPage : Index,
 });
 
 function Index() {
@@ -82,4 +86,8 @@ function Index() {
       <ChatBot />
     </>
   );
+}
+
+function LockedPage() {
+  return <DemoLocked business="SF Clean Service" />;
 }
